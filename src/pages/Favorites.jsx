@@ -35,7 +35,7 @@ export function Favorites({ isLight }) {
     return txt
   }
 
-  if (!currWeather || currWeather.length < 1) return <NoFavs />
+  if (!currWeather || currWeather.length < 1) return <NoFavs isLight={isLight}/>
 
   return (
     <div className="favorites-page-container">
